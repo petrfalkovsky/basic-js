@@ -30,6 +30,7 @@ function renameFiles(names) {
       while (nameCounts.hasOwnProperty(newName)) {
         newName = name + `(${++nameCounts[name] + 1})`;
       }
+
       nameCounts[newName] = 0;
       uniqueNames.push(newName);
     }
